@@ -14,10 +14,10 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven.compiler.source>1.8</maven.compiler.source>
       <junit.version>5.8.2</junit.version>
-      <source>11</source>
-      <target>11</target>
-      <testSource>11</testSource>
-      <testTarget>11</testTarget>
+      <source>9</source>
+      <target>9</target>
+      <testSource>9</testSource>
+      <testTarget>9</testTarget>
   </properties>
 
   <dependencies>
