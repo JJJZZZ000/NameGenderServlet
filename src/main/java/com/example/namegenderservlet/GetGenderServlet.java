@@ -23,9 +23,7 @@ public class GetGenderServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
         String url = request.getRequestURI();
-        String[] methodNames = url.split("/");
-        String methodName = methodNames[methodNames.length-1];
-        if(methodName.equals("delete")){
+        if(url.endsWith("delete") || url.endsWith("delete/")){
             clear();
             response.setStatus(200);
             response.setContentType("text/html;charset=utf-8");
